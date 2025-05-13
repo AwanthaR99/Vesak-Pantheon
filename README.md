@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+🎆 Vesak Pantheon – A Festive Tribute to Vesak Poya
+Vesak Pantheon is a beautiful, interactive web application created to celebrate the spirit of Vesak Poya. This digital pantheon showcases animated lanterns, glowing lights, and rhythmic effects that sync with traditional Vesak music, offering a serene and festive experience directly from the browser.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+✨ Features
+Animated Vesak Lanterns: Smoothly floating lanterns with glow, flicker, chase, and pulse light effects.
 
-## Available Scripts
+Rhythmic Light Sync: Lights dynamically respond to the beat of background music, creating a real-time festive ambiance.
 
-In the project directory, you can run:
+Audio Integration: Traditional Vesak music auto-plays (with user interaction, complying with browser autoplay policies).
 
-### `npm start`
+Glassmorphism Design: Modern, transparent design style with a glowing gradient background.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Mobile-Friendly Layout: Responsive layout suitable for both desktop and mobile browsers.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Simple One-Click Start: Click twice anywhere to initiate music and the beat-driven lighting animation.
 
-### `npm test`
+🛠️ Tech Stack
+React.js: Component-based frontend framework.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+CSS Animations: Pure CSS for lighting effects and motion.
 
-### `npm run build`
+Web Audio API: For analyzing audio frequency and syncing animations with music.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+HTML5 Audio: Built-in music playback with interaction handling.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+📂 Project Structure
+java
+Copy
+Edit
+VesakPantheon/
+│
+├── public/
+│   └── Sakala_Sathama_Bodu_Bathiyen_Mohideen_Beg_Sarigama_lk.mp3
+│
+├── src/
+│   ├── App.js
+│   ├── App.css
+│   └── PandalLights.js
+│
+├── package.json
+└── README.md
+🚀 How to Run Locally
+bash
+Copy
+Edit
+git clone https://github.com/your-username/vesak-pantheon.git
+cd vesak-pantheon
+npm install
+npm start
+Then open http://localhost:3000 in your browser.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+📌 Notes
+Music playback starts after two user clicks due to browser autoplay restrictions.
 
-### `npm run eject`
+The light effects vary depending on the frequency and rhythm of the song using the Web Audio API.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+🙏 Credits
+Music: "Sakala Sathama Bodu Bathiyen" by Mohideen Baig
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Inspired by: The beauty and spiritual essence of Vesak Poya
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+📸 Preview
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![Screenshot 2025-05-13 094512](https://github.com/user-attachments/assets/1cb56dea-dd42-4758-ac73-91395e77aac9)
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
