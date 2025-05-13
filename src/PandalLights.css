@@ -1,0 +1,84 @@
+.pandal-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 25px rgba(255, 255, 200, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.pandal-container:hover {
+  transform: scale(1.02);
+}
+
+.pandal-image {
+  width: 100%;
+  display: block;
+  border-radius: 20px;
+  box-shadow:
+    0 0 25px rgba(255, 204, 0, 0.4),
+    0 0 50px rgba(255, 255, 100, 0.3),
+    0 0 70px rgba(255, 255, 180, 0.2);
+  animation: imageGlow 4s ease-in-out infinite;
+}
+
+/* Gentle pulsing glow */
+@keyframes imageGlow {
+  0%, 100% {
+    box-shadow:
+      0 0 25px rgba(255, 204, 0, 0.4),
+      0 0 50px rgba(255, 255, 100, 0.3),
+      0 0 70px rgba(255, 255, 180, 0.2);
+  }
+  50% {
+    box-shadow:
+      0 0 35px rgba(255, 204, 0, 0.6),
+      0 0 65px rgba(255, 255, 100, 0.4),
+      0 0 90px rgba(255, 255, 180, 0.3);
+  }
+}
+
+
+
+
+
+.bulb {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+/* Animation: Glow */
+.glow {
+  animation: glowAnim 1.2s infinite ease-in-out;
+}
+
+@keyframes glowAnim {
+  0%, 100% { opacity: 0.3; box-shadow: 0 0 5px currentColor; }
+  50% { opacity: 1; box-shadow: 0 0 20px currentColor; }
+}
+
+/* Animation: Flicker */
+.flicker {
+  animation: flickerAnim 0.4s infinite alternate;
+}
+
+@keyframes flickerAnim {
+  0% { opacity: 1; }
+  50% { opacity: 0.3; }
+  100% { opacity: 0.8; }
+}
+
+/* Animation: Chase */
+.chase {
+  animation: chaseAnim 1.5s infinite;
+}
+
+@keyframes chaseAnim {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 1; }
+}
